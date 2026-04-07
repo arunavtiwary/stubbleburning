@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stubble Burning & Air Quality in Punjab | Academic Task</title>
+    <meta name="description"
+        content="A comprehensive geographical and environmental study on stubble burning in Punjab, India, and its impact on air quality.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@500;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Chart.js for Data Visualizations -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Sticky Navigation (Table of Contents) -->
+    <nav id="navbar">
+        <div class="nav-brand">GEO296 Blog</div>
+        <ul class="nav-links">
+            <li><a href="#abstract">Abstract</a></li>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#causes">Causes</a></li>
+            <li><a href="#spatial">Spatial Distribution</a></li>
+            <li><a href="#air-quality">Air Quality</a></li>
+            <li><a href="#health">Health Impacts</a></li>
+            <li><a href="#economic">Economic Costs</a></li>
+            <li><a href="#global">Global Context</a></li>
+            <li><a href="#policy">Policy & Future</a></li>
+            <li><a href="#conclusion">Conclusion</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span><span></span><span></span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content fade-in-up">
+            <div class="badge">ACADEMIC TASK - 1</div>
+            <h1>Stubble burning and air quality in India's winter months</h1>
+            <h2>Patiala smog via NASA; like Indonesian haze crises.</h2>
+
+            <div class="author-info">
+                <div class="author-details">
+                    <p class="tag">Submitted by</p>
+                    <p class="name">Arunav Amrendra Tiwary</p>
+                    <p class="meta">12302361 • Section: 2OM89</p>
+                    <p class="meta">Computer Science and Engineering</p>
+                </div>
+                <div class="author-details">
+                    <p class="tag">Submitted to</p>
+                    <p class="name">Dr. Tek Chand Saini</p>
+                    <p class="meta">GEO296 (Geography)</p>
+                </div>
+            </div>
+            <div class="university">LOVELY PROFESSIONAL UNIVERSITY</div>
+        </div>
+        <a href="#abstract" class="scroll-down">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 5v14M19 12l-7 7-7-7" />
+            </svg>
+        </a>
+    </header>
+
+    <main class="container">
+        <!-- Abstract -->
+        <img src="Asset3/Screenshot 0.png" class="custom-image" alt="Screenshot 0">
+        <section id="abstract" class="content-section fade-in-up">
+            <h2 class="section-title">Abstract</h2>
+            <p>Stubble burning in Punjab has become a major concern in recent years, particularly during the months of
+                October and November. After harvesting paddy, farmers are left with large amounts of crop residue and
+                very little time to prepare their fields for the next wheat crop. Since other methods of clearing this
+                residue are costly, time taking and not easily accessible to everyone, many farmers end up burning it.
+                Although this method is quick and convenient, it leads to serious environmental and health issues.</p>
+            <p>This study looks at stubble burning from a geographical and environmental perspective. It explains how
+                the cropping pattern, climate conditions, and the limited gap between two crop cycles make burning a
+                common practice. The study also highlights the regions where this issue is more prominent, such as
+                Sangrur, Patiala, and Ludhiana, where farming intensity is high. It further discusses how the smoke from
+                these fires affects air quality not only in Punjab but also in nearby areas like Delhi, especially
+                during the winter season.</p>
+            <p>The paper also examines the economic and policy aspects of the issue. Government efforts like providing
+                subsidies for machines and imposing fines have been introduced, but their impact has been limited due to
+                practical difficulties faced by farmers. Overall, the study shows that stubble burning is not simply a
+                matter of choice, but a result of the conditions farmers are working under. It suggests that long-term
+                solutions will require better support systems, more accessible alternatives, and changes in existing
+                farming practices.</p>
+        </section>
+
+        <!-- Introduction -->
+        <section id="introduction" class="content-section fade-in-up">
+            <h2 class="section-title">1. Introduction</h2>
+            <p>Stubble burning in Punjab has become a common issue, especially during the months of October and November
+                after the paddy harvest. Punjab is one of India's major agricultural states, where farming mainly
+                follows the paddy–wheat cycle. Once paddy is harvested, a large amount of leftover crop residue remains
+                in the fields. Farmers then have a very short time to prepare the land for sowing wheat. Because of this
+                time pressure and the high cost of other methods, many farmers choose to burn the residue.</p>
+            <p>Although burning helps farmers clear their fields quickly, it creates serious problems for the
+                environment and public health. The smoke released from burning contains harmful pollutants like fine
+                particulate matter (PM2.5 and PM10) and other gases, which reduce air quality. This pollution does not
+                remain limited to Punjab; it also affects nearby regions, especially Delhi and the NCR, where it
+                contributes to severe winter smog.</p>
+            <p>Stubble burning is not just an environmental issue but also linked to the way agriculture is structured
+                in the region. Factors like cropping patterns, policies, and economic conditions all play a role in why
+                this practice continues. So, to understand the problem properly, it is important to look at it from a
+                geographical perspective, considering both human activities and their impact on the environment.</p>
+            <p>This paper aims to study the causes, distribution, impacts, and possible solutions to stubble burning in
+                Punjab, with a focus on its geographical and environmental aspects.</p>
+        </section>
+
+        <!-- Conceptual Framework -->
+        <section id="conceptual" class="content-section fade-in-up">
+            <h2 class="section-title">2. Conceptual Framework</h2>
+            <h3>2.1 What is Stubble Burning</h3>
+            <p>Stubble burning means setting fire to the leftover crop residue in the fields after harvesting. In
+                Punjab, this mainly refers to the straw left after paddy (rice) is harvested. Every year, around 12–13
+                million tonnes of paddy straw is produced, and a large portion of it is burned in the open during
+                October and November before wheat sowing starts.</p>
+            <p>From a geographical point of view, stubble burning shows how humans interact with the environment. It is
+                not just a random activity, but part of the farming system. Farmers follow a paddy–wheat cycle and have
+                very limited time and money, so they use burning as a quick way to clear the fields.</p>
+
+            <img src="Asset3/Screenshot 2026-04-07 203750.png" class="custom-image" alt="Farmers burning stubble">
+
+            <p>Farmers burn stubble mainly due to practical limitations rather than preference. The decision is
+                influenced by a combination of time pressure, high costs, labour issues, and weak economic alternatives.
+                Burning remains the fastest and cheapest way to clear fields.</p>
+        </section>
+
+        <!-- Causes of Stubble Burning -->
+        <section id="causes" class="content-section fade-in-up">
+            <h2 class="section-title">3. Causes of Stubble Burning</h2>
+
+            <h3>3.1 Short Sowing Window</h3>
+            <p>The biggest constraint is time. Farmers have a very limited period between harvesting paddy and sowing
+                wheat. This short gap makes it impossible to rely on natural decomposition. Burning clears the field
+                within a few hours, allowing immediate preparation for the next crop.</p>
+            <div class="table-responsive">
+                <table class="styled-table">
+                    <thead>
+                        <tr>
+                            <th>Crop Type</th>
+                            <th>Harvest Period</th>
+                            <th>Wheat Sowing Deadline</th>
+                            <th>Available Time</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Basmati Paddy</td>
+                            <td>Sept–Oct</td>
+                            <td>Oct–Nov</td>
+                            <td><span class="highlight-urgent">~15–20 days</span></td>
+                        </tr>
+                        <tr>
+                            <td>Non-Basmati Paddy</td>
+                            <td>Oct–Mid Nov</td>
+                            <td>By Nov 25</td>
+                            <td><span class="highlight-critical">~10–15 days</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3>3.2 High Cost of Machinery</h3>
+            <p>Machines like the Happy Seeder and Super Seeder can manage stubble without burning, but they are
+                expensive for most farmers. Even when rented, costs are around ₹1000–1200 per acre, which becomes
+                expensive for farmers with large land areas.</p>
+            <div class="table-responsive">
+                <table class="styled-table">
+                    <thead>
+                        <tr>
+                            <th>Machine</th>
+                            <th>Function</th>
+                            <th>Cost Range</th>
+                            <th>Practical Issue</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Happy Seeder</td>
+                            <td>Direct wheat sowing in stubble</td>
+                            <td>₹1.3–1.5 lakh</td>
+                            <td>High upfront cost</td>
+                        </tr>
+                        <tr>
+                            <td>Super Seeder</td>
+                            <td>Improved residue handling</td>
+                            <td>₹1.5–1.8 lakh</td>
+                            <td>Limited access</td>
+                        </tr>
+                        <tr>
+                            <td>Baler</td>
+                            <td>Collects straw</td>
+                            <td>₹10+ lakh</td>
+                            <td>Not affordable</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3>3.3 Labour Shortage and Mechanisation</h3>
+            <p>Manual removal of stubble requires significant labour, which is increasingly unavailable due to migration
+                from rural areas. At the same time, combine harvesters are widely used because they save time, but they
+                leave behind tall stubble that is difficult to manage. This combination of reduced labour and mechanised
+                harvesting indirectly promotes burning.</p>
+
+            <h3>3.4 Lack of Incentives and Limited Alternatives</h3>
+            <p>There are very few economically viable uses for paddy straw:</p>
+            <ul class="styled-list">
+                <li>Biomass energy plants exist but are limited</li>
+                <li>Straw has low value as animal fodder</li>
+                <li>Industrial uses (paper, packaging) are not well developed</li>
+                <li>Biofuel sector is still emerging</li>
+            </ul>
+            <p>Farmers are not directly paid for avoiding burning, and existing subsidies do not fully cover costs.
+                Without a strong market or financial incentive, burning remains the most practical option.</p>
+            <img src="Asset3/lauda.png" class="custom-image" alt="Lauda">
+        </section>
+
+        <!-- Spatial Distribution -->
+        <section id="spatial" class="content-section fade-in-up">
+            <h2 class="section-title">4. Spatial Distribution in Punjab</h2>
+            <p>The spatial distribution of stubble burning in Punjab shows a highly concentrated and uneven pattern,
+                with clear regional clusters. The satellite-based thermal anomaly map (Oct 25 – Nov 1) indicates that
+                stubble burning is densely concentrated in the central and southern parts of Punjab, while relatively
+                lower intensity is observed in the northern and eastern regions.</p>
+
+            <img src="Asset3/Screenshot 2026-04-07 203943.png" class="custom-image" alt="Thermal anomalies map">
+
+            <p>The <strong>Malwa region</strong>, which includes districts like Sangrur, Bathinda, Mansa, Patiala, and
+                parts of Ludhiana, clearly stands out as the most affected area. This region shows the highest number of
+                fire incidents, which means stubble burning is happening on a large scale here. The main reason for this
+                is the dominance of paddy farming, along with larger farm sizes and the extensive use of combine
+                harvesters that leave behind a large amount of residue.</p>
+            <p>In comparison, central districts such as Jalandhar, Kapurthala, and Amritsar show a moderate level of
+                stubble burning. The northeast districts, including Hoshiarpur, Rupnagar, and Pathankot, show very
+                little stubble burning due to hilly uneven land and less focus on paddy cultivation.</p>
+        </section>
+
+        <!-- Air Quality Impacts -->
+        <section id="air-quality" class="content-section fade-in-up">
+            <h2 class="section-title">5. Air Quality Impacts Across Punjab Cities (NASA Reports)</h2>
+
+            <h3>5.1 Deterioration of Air Quality</h3>
+            <p>Stubble burning clearly affects air quality in Punjab, especially in October and November. Many farm
+                fires happen within a short period, releasing a lot of smoke and fine particles into the air. Along with
+                this, weather conditions like low temperatures, slow winds, and temperature inversion stop the
+                pollutants from spreading out.</p>
+
+            <img src="Asset3/Screenshot 2026-04-07 204000.png" class="custom-image" alt="Patiala Smog">
+
+            <h3>5.2 City-wise Air Quality Index (AQI) During Peak Burning Period</h3>
+            <div class="table-responsive">
+                <table class="styled-table aqi-table">
+                    <thead>
+                        <tr>
+                            <th>City</th>
+                            <th>Peak AQI (Typical Range)</th>
+                            <th>Category</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="aqi-severe">
+                            <td>Jalandhar</td>
+                            <td>400–450</td>
+                            <td><span class="badge-severe">Severe</span></td>
+                        </tr>
+                        <tr class="aqi-severe">
+                            <td>Khanna</td>
+                            <td>420–460</td>
+                            <td><span class="badge-severe">Severe</span></td>
+                        </tr>
+                        <tr class="aqi-severe">
+                            <td>Mandi Gobindgarh</td>
+                            <td>420–450</td>
+                            <td><span class="badge-severe">Severe</span></td>
+                        </tr>
+                        <tr class="aqi-vpoor">
+                            <td>Ludhiana</td>
+                            <td>300–350</td>
+                            <td><span class="badge-vpoor">Very Poor</span></td>
+                        </tr>
+                        <tr class="aqi-vpoor">
+                            <td>Amritsar</td>
+                            <td>280–320</td>
+                            <td><span class="badge-vpoor">Very Poor</span></td>
+                        </tr>
+                        <tr class="aqi-poor">
+                            <td>Patiala</td>
+                            <td>250–300</td>
+                            <td><span class="badge-poor">Poor</span></td>
+                        </tr>
+                        <tr class="aqi-moderate">
+                            <td>Bathinda</td>
+                            <td>100–150</td>
+                            <td><span class="badge-moderate">Moderate</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3>5.3 Relationship Between Farm Fires and AQI</h3>
+            <p>There is a clear link between the number of farm fires and the rise in AQI levels. Satellite data shows
+                that as the number of fire incidents increases, air quality begins to deteriorate within the next one to
+                two days. This delay occurs because smoke travels with wind and accumulates over cities.</p>
+
+            <div class="chart-container">
+                <canvas id="fireAQIChart"></canvas>
+                <p class="chart-caption"><strong>Fig 5:</strong> Punjab farm fires and percentage change in pollution
+                    from annual mean levels in Punjab and Delhi (Representative Data)</p>
+            </div>
+
+            <h3>5.4 Pollutant Composition During Burning</h3>
+            <p>When farmers burn stubble, a lot of harmful pollutants are released into the air. Data from cities like
+                Ludhiana and Patiala shows that particulate matter is the main problem:</p>
+            <div class="pollutant-cards">
+                <div class="pollutant-card">
+                    <div class="pollutant-name">PM2.5</div>
+                    <div class="pollutant-level critical">Very High</div>
+                    <div class="pollutant-desc">Often >200 µg/m³</div>
+                </div>
+                <div class="pollutant-card">
+                    <div class="pollutant-name">PM10</div>
+                    <div class="pollutant-level critical">Quite High</div>
+                </div>
+                <div class="pollutant-card">
+                    <div class="pollutant-name">NOx</div>
+                    <div class="pollutant-level warning">High Levels</div>
+                </div>
+                <div class="pollutant-card">
+                    <div class="pollutant-name">CO</div>
+                    <div class="pollutant-level warning">Increased</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Health Impacts -->
+        <section id="health" class="content-section fade-in-up">
+            <h2 class="section-title">6. Health Impacts on Population</h2>
+
+            <h3>6.1 Acute Health Effects – The Immediate Toll</h3>
+            <p>During the stubble burning season, the impact on public health is almost immediate. Hospitals and clinics
+                across Punjab start seeing a noticeable surge in patients within days of the fires beginning.</p>
+
+            <div class="health-grid">
+                <div class="health-item">
+                    <h4>Acute Respiratory Infections (ARI)</h4>
+                    <div class="health-stat">30–40% higher</div>
+                    <p>Affects all age groups, especially children under 5.</p>
+                </div>
+                <div class="health-item">
+                    <h4>Asthma attacks</h4>
+                    <div class="health-stat">~2× increase</div>
+                    <p>Hospital visits double for people with existing asthma.</p>
+                </div>
+                <div class="health-item">
+                    <h4>COPD flare-ups</h4>
+                    <div class="health-stat">50–70% rise</div>
+                    <p>Emergency cases spike among the elderly and smokers.</p>
+                </div>
+                <div class="health-item">
+                    <h4>Heart-related issues</h4>
+                    <div class="health-stat">15–20% increase</div>
+                    <p>Angina and heart attacks rise among the elderly.</p>
+                </div>
+            </div>
+
+            <h3>6.2 Chronic Health Effects – Long-Term Burden</h3>
+            <p>Continuous exposure to smoke year after year increases the risk of chronic diseases. Studies show 12-15%
+                reduced lung function in children, 2.3 times higher risk of chronic bronchitis in adults, and growing
+                concern regarding lung cancer and cardiovascular mortality.</p>
+
+            <h3>6.3 District Level Health Data</h3>
+            <p>Health impacts follow the spatial pattern of fire incidents. Districts with the highest fire counts also
+                report the highest health burden.</p>
+            <div class="table-responsive">
+                <table class="styled-table">
+                    <thead>
+                        <tr>
+                            <th>District</th>
+                            <th>Fire Incidents (2025)</th>
+                            <th>ARI Cases (Oct-Nov)</th>
+                            <th>Increase Over Non-Burning</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Tarn Taran</td>
+                            <td>444</td>
+                            <td>12,450</td>
+                            <td class="text-danger">+38%</td>
+                        </tr>
+                        <tr>
+                            <td>Sangrur</td>
+                            <td>406</td>
+                            <td>11,820</td>
+                            <td class="text-danger">+35%</td>
+                        </tr>
+                        <tr>
+                            <td>Ferozepur</td>
+                            <td>236</td>
+                            <td>7,340</td>
+                            <td class="text-warning">+28%</td>
+                        </tr>
+                        <tr>
+                            <td>Amritsar</td>
+                            <td>224</td>
+                            <td>9,210</td>
+                            <td class="text-warning">+25%</td>
+                        </tr>
+                        <tr>
+                            <td>Ludhiana</td>
+                            <td>189</td>
+                            <td>14,560</td>
+                            <td class="text-warning">+22%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Economic Costs -->
+        <section id="economic" class="content-section fade-in-up">
+            <h2 class="section-title">7. Economic Costs of Stubble Burning</h2>
+            <p>The impacts discussed are not limited to health—they also have clear economic consequences. Reduced
+                productivity due to illness leads to a loss of working hours, which affects overall economic output.</p>
+
+            <h3>7.1 Direct Costs to Farmers</h3>
+            <p>Burning depletes soil organic matter and essential nutrients, forcing farmers to spend more on synthetic
+                fertilizers to maintain yields. The annual fertilizer subsidy burden from burning is estimated at ₹1,050
+                crore if the entire paddy area were burned.</p>
+
+            <h3>7.2 Missed Economic Opportunity – The Value of Stubble</h3>
+            <p>Paddy straw is not a waste; it is a valuable biomass resource. If even 50% of paddy straw were utilised
+                productively, it could generate ₹1,500–2,000 crore of annual revenue for Punjab’s rural economy.</p>
+
+            <div class="chart-container">
+                <canvas id="revenueChart"></canvas>
+                <p class="chart-caption"><strong>Fig 7:</strong> Potential revenue per tonne of paddy straw by
+                    alternative end use (₹) (Illustrative Data based on text)</p>
+            </div>
+        </section>
+
+        <!-- Global Comparative Analysis -->
+        <section id="global" class="content-section fade-in-up">
+            <h2 class="section-title">8. Global Comparative Analysis</h2>
+
+            <div class="case-study-grid">
+                <div class="case-card">
+                    <div class="case-country">🇮🇩 Indonesia</div>
+                    <h4>Transboundary Haze</h4>
+                    <p><strong>Context:</strong> Fires on Sumatra and Kalimantan clear land for oil palm and timber.</p>
+                    <p><strong>Lesson:</strong> Regional pressure forced action. A formal airshed agreement across
+                        affected Indian states could compel faster progress.</p>
+                </div>
+                <div class="case-card">
+                    <div class="case-country">🇧🇷 Brazil</div>
+                    <h4>Phased Elimination</h4>
+                    <p><strong>Context:</strong> Pre-harvest burning of sugarcane was routine until early 2000s.</p>
+                    <p><strong>Lesson:</strong> A legally mandated, long-term phase-out with clear deadlines works.
+                        Punjab needs an end date for burning, not just subsidies.</p>
+                </div>
+                <div class="case-card">
+                    <div class="case-country">🇺🇸 United States</div>
+                    <h4>Crop Residue Management</h4>
+                    <p><strong>Context:</strong> Corn and soybean residues comparable to paddy straw. Burning is now
+                        rare.</p>
+                    <p><strong>Lesson:</strong> Creating economic value for residue and linking conservation to subsidy
+                        eligibility reduces burning.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Critical Evaluation -->
+        <section id="evaluation" class="content-section fade-in-up">
+            <h2 class="section-title">9. Critical Evaluation of Current Approaches</h2>
+
+            <p>Although Punjab has reported a 92% decline in farm fires since 2021, structural gaps remain.</p>
+
+            <h3>9.1 Strengths – What Has Worked</h3>
+            <p>Overall reduction of 92% in fires (from 62,718 in 2021 to 4,732 in 2025). Increased stubble utilisation
+                to 7.06 million tonnes (2025). ₹395 crore disbursed for CRM machinery.</p>
+
+            <h3>9.2 Weaknesses – Persistent Gaps</h3>
+            <p><strong>The Detection Problem:</strong> Farmers have adapted to satellite pass-overs and now burn stubble
+                in the late afternoon (4 PM - 6 PM), resulting in significant undercounting.</p>
+
+            <p><strong>Uneven District Performance:</strong> While districts like Fatehgarh Sahib showed strong
+                reductions, others like Fazilka saw a +118% increase.</p>
+
+            <div class="chart-container">
+                <canvas id="districtChart"></canvas>
+                <p class="chart-caption"><strong>Fig 8:</strong> Top 5 Districts by stubble burning incidents (Source:
+                    Hindustan Times 2025)</p>
+            </div>
+        </section>
+
+        <!-- Policy Recommendations and Future -->
+        <section id="policy" class="content-section fade-in-up">
+            <h2 class="section-title">10. Proposed Policy Recommendations and Future</h2>
+
+            <h3>10.1 Solution Recommendations</h3>
+            <div class="recommendation-box">
+                <h4>10.1.1 Addressing Uneven Geographies</h4>
+                <p>There is a need to develop district-specific action plans for high-incidence and underperforming
+                    regions. Establishment of mobile machinery banks offering subsidised rental services at more
+                    affordable rates.</p>
+            </div>
+
+            <div class="recommendation-box">
+                <h4>10.1.2 Creating Stable Stubble Markets</h4>
+                <p>Introduce a minimum procurement price for paddy straw (e.g., ₹2,000 per tonne). Revise power purchase
+                    rates to a more sustainable level (₹6–7 per unit) to help biomass plants restore operations.</p>
+            </div>
+
+            <h3>10.2 Future Scenarios</h3>
+            <div class="scenario-grid">
+                <div class="scenario-card positive">
+                    <h4>Scenario 1: A Transformative Shift</h4>
+                    <p>With continuous satellite monitoring, binding phase-outs, and a ₹2,000/tonne MSP, burning is
+                        drastically reduced. Utilization of 10-12 million tonnes generates up to ₹3,500 crore in farm
+                        income. PM levels drop by 40-50%.</p>
+                </div>
+                <div class="scenario-card negative">
+                    <h4>Scenario 2: Fragmented Case (Business as Usual)</h4>
+                    <p>Without changes, official fire numbers may drop but actual burning continues post-4 PM. Biomass
+                        plants shut down due to low power rates. Health impacts remain severe with an estimated 44,000
+                        excess deaths annually.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Conclusion -->
+        <section id="conclusion" class="content-section fade-in-up">
+            <h2 class="section-title">11. Conclusion</h2>
+            <p class="summary-text">Stubble burning is not simply the result of individual choices by farmers. It is
+                closely tied to the structure of Punjab's agricultural system, particularly the short gap between rice
+                harvesting and wheat sowing, the high cost of machinery, labour shortages, and the absence of reliable
+                markets for paddy straw.</p>
+            <p>While official data shows a sharp decline in farm fires, this improvement is uneven. The environmental,
+                health, and economic impacts remain significant—costing over ₹1,600 crore per year, alongside severe
+                health outcomes.</p>
+            <p>The way forward lies in a more balanced approach: improving monitoring systems, focusing on
+                high-incidence districts, and creating stable markets for crop residue. With consistent policy efforts,
+                Punjab has the potential to move towards a more sustainable agricultural system.</p>
+        </section>
+
+        <!-- Bibliography -->
+        <section id="bibliography" class="content-section fade-in-up">
+            <h2 class="section-title">12. Bibliography</h2>
+            <div class="bibliography-list">
+                <h4>Government and Official Sources</h4>
+                <ol>
+                    <li>Ministry of Environment, Forest and Climate Change. (2026). Parliament Question: Detection of
+                        stubble burning.</li>
+                    <li>Commission for Air Quality Management (CAQM). (2025). Punjab records 3,284 stubble burning.</li>
+                    <li>Punjab Pollution Control Board (PPCB). (2025). Punjab witnesses 50% drop in farm fires.</li>
+                    <li>Khudian, G. S. (2026). Centre's admission of stubble burning reduction is a victory.</li>
+                    <li>PTC News. (2025). Stubble burning in Punjab: CM Mann's home district Sangrur tops.</li>
+                </ol>
+
+                <h4>Academic and Scientific Research</h4>
+                <ol start="6">
+                    <li>Jethva, H. (2025). Changing farmer practices: NASA explains how later stubble burns impact
+                        monitoring.</li>
+                    <li>Singh, N., et al. (2025). Temporal shift in stubble burning peak activity in northwest India.
+                    </li>
+                    <li>Yang, Z., et al. (2025). Perceptions of air pollution from stubble burning and its health risks
+                        in Punjab.</li>
+                    <li>Research Institute for Humanity and Nature (RIHN). (2025). Health risks of air pollution from
+                        stubble burning.</li>
+                </ol>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>Academic Task - 1 • GEO296</p>
+            <p>Lovley Professional University</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
